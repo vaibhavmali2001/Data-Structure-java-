@@ -1,28 +1,20 @@
-package LL;
+package staticstk;
 
 public class Test {
 
 	public static void main(String[] args) {
 		
-		Singly sl = new Singly();
-		
-		sl.insertBeg(10);
-		sl.insertBeg(20);
-		sl.insertBeg(30);
-		sl.insertBeg(40);
-		sl.insertBeg(50);
-		sl.insertEnd(5);
-		sl.display();
-		sl.deleteBeg();
-		sl.display();
-		sl.deleteEnd();
-		sl.display();
-		sl.insertPos(60, 3);
-		sl.display();
-		//sl.search(40);
-		sl.reverse();
-		sl.display();
-		
+		Stack st = new Stack(200);
+		st.push(3);
+		st.push(2);
+		st.push(1);
+		st.push(5);
+		st.push(8);
+		st.display();
+		st.pop();
+		st.display();
+		st.peak();
+
 	}
 
 }
